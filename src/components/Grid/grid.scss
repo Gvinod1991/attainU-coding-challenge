@@ -1,0 +1,28 @@
+.grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-spacing: 0!important;
+  tbody{
+    border:1px solid #111;
+    td{
+      width:2.5rem;
+      height:2.5rem;
+      padding: 0.5rem;
+      border:1px solid #111;
+    }
+  }
+  .fill-sprites{
+    background: url('../../assets/soldier-enemy.svg');
+    width:2rem;
+    height:2rem;
+    cursor: pointer;
+  }
+  .fill-sprites-hero{
+    background: url('../../assets/soldier-hero.svg');
+    width:2rem;
+    height:2rem;
+    cursor: pointer;
+  }
+}
