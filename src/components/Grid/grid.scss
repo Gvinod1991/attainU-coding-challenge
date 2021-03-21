@@ -25,4 +25,15 @@
     height:2rem;
     cursor: pointer;
   }
+  
+}
+.row-box{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icon{
+  width:50px
 }

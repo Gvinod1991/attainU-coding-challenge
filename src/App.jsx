@@ -19,7 +19,7 @@ function App() {
         <GameEntryForm handleSubmit={handleSubmit} />
       }
       {rows > minRows && columns > minColumns ?
-        <Grid rowLength={rows} columnLength={columns} />
+        <Grid rowLength={rows} columnLength={columns} quit={handleSubmit} />
         : null
       }
     </div>
