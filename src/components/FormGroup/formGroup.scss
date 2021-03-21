@@ -1,0 +1,13 @@
+@import "../../index.scss";
+
+.form-group{
+  padding: 0.5rem;
+  label{
+    color: $dark;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .form-group-input{
+    margin:0.5rem ;
+  }
+}
