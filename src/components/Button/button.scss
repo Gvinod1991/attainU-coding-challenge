@@ -1,0 +1,39 @@
+@import "../../index.scss";
+
+.btn{
+  cursor: pointer;
+  font-size: 1em;
+  display: block;
+  color:$primary;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  background: $white;
+  border-width: 1px;
+  border: 1px solid $primary;
+  border-image: initial;
+  outline: none;
+  &:hover{
+    color:$white;
+    background: $primary; 
+  }
+  @media screen and (max-width: 450px) {
+    padding: 0.5rem 0.5rem;
+  }
+}
+.btn-danger{
+  color:$danger;
+  border: 1px solid $danger;
+  &:hover{
+    color: $white;
+    background: $danger; 
+  }
+}
+.btn-success{
+  color:$white;
+  border: 1px solid $success;
+  background: $success; 
+  &:hover{
+    color: $white;
+    background: $success; 
+  }
+}

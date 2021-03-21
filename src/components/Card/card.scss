@@ -1,0 +1,9 @@
+@import '../../index.scss';
+
+.card{
+  background-color: $white;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0.5rem 0 rgba(10, 91, 106, 0.16);
+  width: 100%;
+}
