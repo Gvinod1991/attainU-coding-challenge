@@ -16,10 +16,10 @@ export default function GameEntryForm({ handleSubmit }) {
     columns: ""
   });
   const handleBtnClick = () => {
-    if (!rows || !isNumeric(rows)) {
+    if (!rows || !isNumeric(rows) || rows <= 5) {
       setError((prevState) => ({
         ...prevState,
-        rows: "No of rows required"
+        rows: "No of rows required and should greater than 5"
       }))
       return false;
     } else {
@@ -28,10 +28,10 @@ export default function GameEntryForm({ handleSubmit }) {
         rows: ""
       }))
     }
-    if (!columns || !isNumeric(columns)) {
+    if (!columns || !isNumeric(columns) || columns <= 5) {
       setError((prevState) => ({
         ...prevState,
-        columns: "No of columns required"
+        columns: "No of columns required and should greater than 5"
       }))
       return false;
     } else {
@@ -41,6 +41,7 @@ export default function GameEntryForm({ handleSubmit }) {
       }))
     }
     if (rows && columns) {
+
       handleSubmit(rows, columns);
     }
   }
